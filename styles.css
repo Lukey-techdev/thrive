@@ -1,0 +1,221 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Images/4.jpg') no-repeat center center / cover;
+    background-size: cover;
+    background-position: center;
+}
+
+body.light-bg {
+    background: url('Images/4.jpg') no-repeat center center / cover;
+}
+
+body.light-bg .left-text {
+    color: rgb(195, 168, 197);
+    text-shadow: none;
+}
+
+.wrapper {
+    width: 33.33%; 
+    height: 100vh;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.411);
+    backdrop-filter: blur(7px);
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+}
+
+.wrapper h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #ffffff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper .button {
+    width: 100%;
+    height: 60px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .button:hover {
+    background: rgba(255, 255, 255, 0.644);
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.left-text {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(209, 209, 183);
+    text-align: left;
+}
+
+.left-text h1 {
+    font-size: 150px;
+    font-weight: 600;
+    text-shadow: 6px 6px 8px rgb(0, 0, 0);
+}
+
+.left-text p {
+    font-size: 40px;
+    text-shadow: 3px 2px 4px rgb(0, 0, 0);
+    margin-top: 40px;
+}
+
+.slider-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.slider-checkbox {
+    display: none;
+}
+
+.slider {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    transition: transform 0.3s;
+}
+
+.slider-checkbox:checked + .slider {
+    background-color: #4CAF50;
+}
+
+.slider-checkbox:checked + .slider::before {
+    transform: translateX(25px);
+}
+
+#sun-icon, #moon-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+}
+
+#sun-icon {
+    left: 5px; 
+}
+
+#moon-icon {
+    left: 5px; 
+    display: none; 
+}
+
+body.light-bg {
+    background: url('Images/4.jpg') no-repeat center center / cover;
+}
+
+body:not(.light-bg) {
+    background: url('Images/3.jpg') no-repeat center center / cover;
+}
