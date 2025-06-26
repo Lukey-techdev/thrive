@@ -10,13 +10,13 @@ body {
     justify-content: flex-end;
     align-items: center;
     min-height: 100vh;
-    background: url('Images/4.jpg') no-repeat center center / cover;
+    background: url('Images/forest-dark.jpg') no-repeat center center / cover;
     background-size: cover;
     background-position: center;
 }
 
 body.light-bg {
-    background: url('Images/4.jpg') no-repeat center center / cover;
+    background: url('Images/forest-dark.jpg') no-repeat center center / cover;
 }
 
 body.light-bg .left-text {
@@ -213,9 +213,9 @@ form {
 }
 
 body.light-bg {
-    background: url('Images/4.jpg') no-repeat center center / cover;
+    background: url('Images/forest-dark.jpg') no-repeat center center / cover;
 }
 
 body:not(.light-bg) {
-    background: url('Images/3.jpg') no-repeat center center / cover;
+    background: url('Images/forest.jpg') no-repeat center center / cover;
 }
