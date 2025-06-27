@@ -9,7 +9,7 @@ Welcome to **Thrive**, a sleek and modern login page designed to inspire mindful
 ## 🌟 Features
 
 - 🌗 **Dark / Light Mode Toggle** – Instantly switch between a nature-inspired light theme and a sleek dark theme.
-- 🔐 **Login Form** – Functional login interface with username and password inputs, icons, and a "Remember Me" option.
+- 🔐 **Login Form** – Sleek login interface with username and password inputs, icons, and a "Remember Me" option.
 - 🌲 **Immersive Hero Section** – Fullscreen background image and bold typography for the brand message.
 - ✨ **Modern UI/UX** – Clean glassmorphism effect on the login card, animated transitions, and accessible font choices.
 
